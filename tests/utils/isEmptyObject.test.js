@@ -1,0 +1,28 @@
+import { isEmptyObject } from "../../src";
+
+describe("isEmptyObject()", () => {
+  describe("arrays", () => {
+    it("[] => true", () => expect(isEmptyObject([])).toBe(true));
+    it("[0] => false", () => expect(isEmptyObject([0])).toBe(false));
+    it("[1, 2] => false", () => expect(isEmptyObject([1, 2])).toBe(false));
+  });
+
+  describe("objects", () => {
+    it("{} => true", () => expect(isEmptyObject({})).toBe(true));
+    it("{ a: 0 } => false", () => expect(isEmptyObject({ a: 0 })).toBe(false));
+    it("{ a: 0, b: 1 } => false", () => expect(isEmptyObject({ a: 0, b: 1 })).toBe(false));
+  });
+
+  describe("others", () => {
+    it("1 => Error", () => {
+      expect(() => isEmptyObject(1)).toThrow(
+        new Error("You must provide either an object or an array.")
+      );
+    });
+    it(`"a" => Error`, () => {
+      expect(() => isEmptyObject("a")).toThrow(
+        new Error("You must provide either an object or an array.")
+      );
+    });
+  });
+});
