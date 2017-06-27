@@ -1,8 +1,8 @@
-# @hivereactor/utils
+## @hivereactor/utils
 
 A bunch of utility functions for any JavaScript project.
 
-## List of Functions
+### Available functions
 
 * `filterNull(a: mixed): mixed | undefined`
 * `numberIsNaN(a: mixed): boolean`
