@@ -1,6 +1,6 @@
-import { filterEmpty } from "../../src/filterEmpty";
+import { filterEmpty } from "../../src";
 
-describe("utils/filterEmpty()", () => {
+describe("filterEmpty()", () => {
   describe("arrays", () => {
     it("[] => undefined", () => expect(filterEmpty([])).toBe(undefined));
     it("[0] => [0]", () => expect(filterEmpty([0])).toEqual([0]));
