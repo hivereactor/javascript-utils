@@ -1,11 +1,21 @@
 /**
+ * Checks if the passed object or array is empty.
+ * Returns `true` if either:
+ * – An [array] or {object} is empty.
+ * – `null` has been passed.
+ *
+ * If the passed data is not an {object} or
+ * an [array], it will return `false`.
+ *
  * @flow
+ * @param {array|object} a – The passed object or array.
+ * @return {boolean} – `false` if {object} or [array] has at least one key.
  */
 
-function isEmptyObject(a: {}): boolean {
-  if (typeof a !== "object") {
-    throw new Error("You must provide either an object or an array.");
-  }
+type Object = {} | Array<mixed>;
+
+function isEmptyObject(a: Object): boolean {
+  if (typeof a !== "object") return false;
 
   // typeof null => "object"
   if (a === null) return true;

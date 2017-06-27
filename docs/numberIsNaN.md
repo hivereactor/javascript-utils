@@ -1,4 +1,4 @@
-## numberIsNaN(a: number)
+## numberIsNaN(a: number): boolean
 
 Checks if the passed number is `NaN` value. This serves as a polyfill for the `Number.isNaN()`.
 

@@ -14,15 +14,7 @@ describe("isEmptyObject()", () => {
   });
 
   describe("others", () => {
-    it("1 => Error", () => {
-      expect(() => isEmptyObject(1)).toThrow(
-        new Error("You must provide either an object or an array.")
-      );
-    });
-    it(`"a" => Error`, () => {
-      expect(() => isEmptyObject("a")).toThrow(
-        new Error("You must provide either an object or an array.")
-      );
-    });
+    it("1 => false", () => expect(isEmptyObject(1)).toBe(false));
+    it(`"a" => false`, () => expect(isEmptyObject("a")).toBe(false));
   });
 });
