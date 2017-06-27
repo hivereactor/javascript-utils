@@ -17,9 +17,11 @@ function filterEmpty(a: mixed): mixed {
     return Object.keys(a).length > 0 ? a : undefined;
   }
   
+  // isNaN("a") => true
+  // Number.isNaN("a") => false
   if (Number.isNaN(a)) return undefined;
 
   return a;
 }
 
-module.exports = filterEmpty;
+export { filterEmpty };

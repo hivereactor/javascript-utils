@@ -1,0 +1,68 @@
+{
+  "name": "javascript-utils",
+  "version": "1.0.0",
+  "description": "A bunch of utility functions for any JavaScript project.",
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "files": [
+    "lib/",
+    ".flowconfig"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.5.2",
+    "jest": "^20.0.4"
+  },
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:es && npm run build:types",
+    "build:cjs": "babel src/ -d lib/cjs/ --plugins=transform-es2015-modules-commonjs",
+    "build:es": "babel src/ -d lib/es/",
+    "build:types": "mkdir -p lib/types/ && flow gen-flow-files src/ --out-dir lib/types/",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hivereactor/javascript-utils.git"
+  },
+  "author": "Hivereactor (https://hivereactor.com) <hello@hivereactor.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hivereactor/javascript-utils/issues"
+  },
+  "homepage": "https://github.com/hivereactor/javascript-utils#readme",
+  "babel": {
+    "plugins": [
+      "transform-flow-strip-types"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "ie >= 9",
+              "last 2 versions"
+            ],
+            "node": 4
+          }
+        }
+      ]
+    ]
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.test.js?(x)"
+    ]
+  }
+}

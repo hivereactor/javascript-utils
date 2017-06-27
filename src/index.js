@@ -1,5 +1,1 @@
-const filterEmpty = require("./filterEmpty");
-
-module.exports = {
-  filterEmpty,
-};
+export { filterEmpty } from "./filterEmpty";
