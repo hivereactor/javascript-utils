@@ -42,6 +42,11 @@
   },
   "homepage": "https://github.com/hivereactor/javascript-utils#readme",
   "babel": {
+    "env": {
+      "test": {
+        "plugins": ["transform-es2015-modules-commonjs"]
+      }
+    },
     "plugins": [
       "transform-flow-strip-types"
     ],
