@@ -1,7 +1,7 @@
 {
   "name": "@hivereactor/utils",
   "version": "1.0.0",
-  "description": "A bunch of utility functions for any JavaScript project.",
+  "description": "Utility functions for your JavaScript project.",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
   "directories": {

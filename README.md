@@ -1,6 +1,6 @@
 ## @hivereactor/utils
 
-A bunch of utility functions for any JavaScript project.
+Utility functions for your JavaScript project.
 
 ### Installation
 
