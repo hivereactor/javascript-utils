@@ -14,11 +14,14 @@ function filterEmpty(a: mixed): mixed {
     // typeof null => "object"
     if (a === null) return undefined;
 
-    return Object.keys(a).length > 0 ? a : undefined;
+    // Get the first key, reassign it and break the loop
+    // If there are no keys, it doesn't do anything
+    let key = undefined;
+    for (key in a) break;
+
+    return key !== undefined ? a : undefined;
   }
   
-  // isNaN("a") => true
-  // Number.isNaN("a") => false
   if (Number.isNaN(a)) return undefined;
 
   return a;
