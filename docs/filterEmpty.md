@@ -7,8 +7,8 @@ Filters the passed value and returns `undefined` if either:
 
 #### Arguments
 
-* `a` **(mixed)** – The passed data.
+* `a` *(mixed)* – The passed data.
 
 #### Returns
 
-* **(mixed)** – Either `undefined` or the passed data.
+* *(mixed)* – Either `undefined` or the passed data.
