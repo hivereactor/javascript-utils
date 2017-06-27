@@ -7,8 +7,8 @@
  * @return {boolean} – `true` if `a` equals to `NaN`.
  */
 
-function numberNaN(a: number): boolean {
+function numberIsNaN(a: number): boolean {
   return typeof a === "number" && isNaN(a);
 }
 
-export { numberNaN };
+export { numberIsNaN };

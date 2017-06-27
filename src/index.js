@@ -1,2 +1,2 @@
 export { filterEmpty } from "./filterEmpty";
-export { numberNaN } from "./numberNaN";
+export { numberIsNaN } from "./numberIsNaN";

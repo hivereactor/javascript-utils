@@ -9,7 +9,7 @@
  * @return {*|undefined} – Either `undefined` or the passed data.
  */
 
-import { numberNaN } from "./numberNaN";
+import { numberIsNaN } from "./numberIsNaN";
 
 function filterEmpty(a: mixed): mixed {
   if (typeof a === "object") {
