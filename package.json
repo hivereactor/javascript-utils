@@ -1,5 +1,5 @@
 {
-  "name": "javascript-utils",
+  "name": "@hivereactor/utils",
   "version": "1.0.0",
   "description": "A bunch of utility functions for any JavaScript project.",
   "main": "lib/cjs/index.js",
@@ -20,14 +20,15 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.5.2",
+    "flow-copy-source": "^1.2.0",
     "jest": "^20.0.4"
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:es && npm run build:types",
     "build:cjs": "babel src/ -d lib/cjs/ --plugins=transform-es2015-modules-commonjs",
     "build:es": "babel src/ -d lib/es/",
-    "build:types": "mkdir -p lib/types/ && flow gen-flow-files src/ --out-dir lib/types/",
-    "prepublish": "npm run build",
+    "build:types": "flow-copy-source src/ lib/cjs/",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "repository": {
