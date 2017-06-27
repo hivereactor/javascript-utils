@@ -13,7 +13,7 @@ import { isEmptyObject, numberIsNaN } from "./";
 
 function filterEmpty(a: mixed): mixed {
   if (typeof a === "object") return !isEmptyObject(a) ? a : undefined;
-  if (Number.isNaN(a)) return undefined;
+  if (numberIsNaN(a)) return undefined;
 
   return a;
 }
