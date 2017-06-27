@@ -9,22 +9,11 @@
  * @return {*|undefined} – Either `undefined` or the passed data.
  */
 
-import { numberIsNaN } from "./numberIsNaN";
+import { isEmptyObject, numberIsNaN } from "./";
 
 function filterEmpty(a: mixed): mixed {
-  if (typeof a === "object") {
-    // typeof null => "object"
-    if (a === null) return undefined;
-
-    // Get the first key, reassign it and break the loop
-    // If there are no keys, it doesn't do anything
-    let key = undefined;
-    for (key in a) break;
-
-    return key !== undefined ? a : undefined;
-  }
-  
-  if (Number.isNaN(a)) return undefined;
+  if (typeof a === "object") return !isEmptyObject(a) ? a : undefined;
+  if (numberIsNaN(a)) return undefined;
 
   return a;
 }

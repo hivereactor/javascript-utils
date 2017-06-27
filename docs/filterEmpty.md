@@ -1,4 +1,4 @@
-## filterEmpty(a: mixed)
+## filterEmpty(a: mixed): mixed
 
 Filters the passed value and returns `undefined` if either:
 * An [array] or an {object} is empty.
