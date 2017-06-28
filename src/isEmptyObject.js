@@ -14,7 +14,7 @@
 
 type Object = {} | Array<mixed>;
 
-function isEmptyObject(a: Object): boolean {
+export function isEmptyObject(a: Object): boolean {
   if (typeof a !== "object") return false;
 
   // typeof null => "object"
@@ -27,5 +27,3 @@ function isEmptyObject(a: Object): boolean {
 
   return key === undefined;
 }
-
-export { isEmptyObject };
