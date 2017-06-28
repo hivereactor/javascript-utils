@@ -11,11 +11,9 @@
 
 import { isEmptyObject, numberIsNaN } from "./";
 
-function filterEmpty(a: mixed): mixed {
+export function filterEmpty(a: mixed): mixed {
   if (typeof a === "object") return !isEmptyObject(a) ? a : undefined;
   if (numberIsNaN(a)) return undefined;
 
   return a;
 }
-
-export { filterEmpty };
