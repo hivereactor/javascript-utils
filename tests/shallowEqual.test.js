@@ -5,6 +5,7 @@ describe("shallowEqual()", () => {
     it("[] === []", () => expect(shallowEqual([], [])).toBe(true));
     it("[1] === [1]", () => expect(shallowEqual([1], [1])).toBe(true));
     it("[1] !== [2]", () => expect(shallowEqual([1], [2])).toBe(false));
+    it("[1, 2] !== [2, 1]", () => expect(shallowEqual([1, 2], [2, 1])).toBe(false));
   });
 
   describe("booleans", () => {
