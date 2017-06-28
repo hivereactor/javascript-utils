@@ -1,22 +1,14 @@
-## @hivereactor/utils
+# @hivereactor/utils
 
 Utility functions for your JavaScript project.
 
-### Installation
+## Installation
 
 ```zsh
-git clone https://github.com/hivereactor/javascript-utils.git
-cd javascript-utils
-npm link
+npm install @hivereactor/utils
 ```
 
-In your project:
-
-```zsh
-npm link @hivereactor/utils
-```
-
-### API
+## API
 
 * [`filterEmpty(a: mixed): mixed | undefined`](docs/filterEmpty.md)
 * [`isEmptyObject(a: array | object): boolean`](docs/isEmptyObject.md)
