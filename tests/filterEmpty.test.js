@@ -1,4 +1,4 @@
-import { filterEmpty } from "../../src";
+import { filterEmpty } from "../src";
 
 describe("filterEmpty()", () => {
   describe("arrays", () => {

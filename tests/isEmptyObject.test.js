@@ -1,4 +1,4 @@
-import { isEmptyObject } from "../../src";
+import { isEmptyObject } from "../src";
 
 describe("isEmptyObject()", () => {
   describe("arrays", () => {
