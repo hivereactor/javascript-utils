@@ -1,6 +1,6 @@
-## filterEmpty(a: mixed): mixed
+## isEmpty(a: mixed): boolean
 
-Checks and filters the value if it's empty. Returns `undefined` if either:
+Checks if the passed value is empty. Returns `true` if either:
 
 * An [array] or an {object} is empty.
 * An empty string (`""`) has been passed.
@@ -13,4 +13,4 @@ Checks and filters the value if it's empty. Returns `undefined` if either:
 
 #### Returns
 
-* *(mixed)* – `undefined` if the conditions above are met.
+* *(boolean)* – `true` if the conditions above are met.

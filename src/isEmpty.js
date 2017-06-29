@@ -1,14 +1,14 @@
 /**
  * Checks if the passed value is empty.
  * Returns `true` if either:
- * – An [array] or {object} is empty.
+ * – An [array] or an {object} is empty.
+ * – An empty string (`""`) has been passed.
  * – `null` has been passed.
  * – `NaN` has been passed.
- * – Empty string (`""`) was passed.
  *
  * @flow
  * @param {*} a – The passed value.
- * @return {boolean} – `true` if the following conditions are met.
+ * @return {boolean} – `true` if the conditions above are met.
  */
 
 import { numberIsNaN } from "./";
