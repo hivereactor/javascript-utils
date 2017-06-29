@@ -1,4 +1,4 @@
-## filterEmpty(a: mixed): mixed
+## filterEmpty(a: mixed): mixed | undefined
 
 Checks and filters the value if it's empty. Returns `undefined` if either:
 
