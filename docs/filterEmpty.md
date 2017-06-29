@@ -13,4 +13,4 @@ Checks and filters the value if it's empty. Returns `undefined` if either:
 
 #### Returns
 
-* *(mixed)* – `undefined` if the conditions above are met.
+* *(mixed | undefined)* – `undefined` if the conditions above are met.
