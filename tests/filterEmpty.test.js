@@ -29,7 +29,7 @@ describe("filterEmpty()", () => {
   });
 
   describe("strings", () => {
-    it(`"" => ""`, () => expect(filterEmpty("")).toBe(""));
+    it(`"" => ""`, () => expect(filterEmpty("")).toBe(undefined));
     it(`"a" => "a"`, () => expect(filterEmpty("a")).toBe("a"));
   });
 });

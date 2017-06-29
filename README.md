@@ -11,6 +11,6 @@ npm install @hivereactor/utils
 ## API
 
 * [`filterEmpty(a: mixed): mixed | undefined`](docs/filterEmpty.md)
-* [`isEmptyObject(a: array | object): boolean`](docs/isEmptyObject.md)
+* [`isEmpty(a: mixed): boolean`](docs/isEmpty.md)
 * [`numberIsNaN(a: number): boolean`](docs/numberIsNaN.md)
 * [`shallowEqual(a: mixed, b: mixed): boolean`](docs/shallowEqual.md)
