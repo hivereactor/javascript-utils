@@ -26,7 +26,5 @@ export function isEmpty(a: mixed): boolean {
     return key === undefined;
   }
 
-  if (numberIsNaN(a) || a === "") return true;
-  
-  return false;
+  return numberIsNaN(a) || a === "";
 }

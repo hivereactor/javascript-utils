@@ -1,6 +1,6 @@
 {
   "name": "@hivereactor/utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Utility functions for your JavaScript project.",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
@@ -24,6 +24,7 @@
     "jest": "^20.0.4"
   },
   "scripts": {
+    "prebuild": "rm -rf lib/",
     "build": "npm run build:cjs && npm run build:es && npm run build:types",
     "build:cjs": "babel src/ -d lib/cjs/ --plugins=transform-es2015-modules-commonjs",
     "build:es": "babel src/ -d lib/es/",
@@ -44,7 +45,9 @@
   "babel": {
     "env": {
       "test": {
-        "plugins": ["transform-es2015-modules-commonjs"]
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
       }
     },
     "plugins": [
