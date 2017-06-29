@@ -1,4 +1,4 @@
 export { filterEmpty } from "./filterEmpty";
-export { isEmptyObject } from "./isEmptyObject";
+export { isEmpty } from "./isEmpty";
 export { numberIsNaN } from "./numberIsNaN";
 export { shallowEqual } from "./shallowEqual";
