@@ -2,7 +2,7 @@
 
 Checks if the passed value is an object literal (`{}`).
 
-#### Arguments
+#### Arguments
 
 * `a` *(object)* – The passed value.
 
