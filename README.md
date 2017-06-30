@@ -2,13 +2,13 @@
 
 Utility functions for your JavaScript project.
 
-## Installation
+### Installation
 
 ```zsh
 npm install @hivereactor/utils
 ```
 
-## API
+### API
 
 * [`filterEmpty(a: mixed): mixed | undefined`](docs/filterEmpty.md)
 * [`isEmpty(a: mixed): boolean`](docs/isEmpty.md)
