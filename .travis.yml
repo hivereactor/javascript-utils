@@ -1,7 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-- "7"
+- "8"
 addons:
   apt:
     sources:
@@ -9,6 +9,10 @@ addons:
     packages:
     - gcc-4.8
     - g++-4.8
+after_script:
+- codecov
+before_install:
+- npm i -g codecov
 branches:
   only:
   - master
@@ -18,4 +22,4 @@ cache:
 env:
 - TRAVIS=travis CXX=g++-4.8
 script:
-- npm test
+- npm test -- --coverage
