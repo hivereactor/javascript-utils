@@ -22,4 +22,4 @@ cache:
 env:
 - TRAVIS=travis CXX=g++-4.8
 script:
-- npm test -- --coverage
+- npm test

@@ -6,13 +6,12 @@
  * – `null` has been passed.
  * – `NaN` has been passed.
  *
- * @flow
  * @param {*} a – The passed value.
  * @return {*|undefined} – `undefined` if the conditions above are met.
  */
 
 import { isEmpty, numberIsNaN } from "./";
 
-export function filterEmpty(a: mixed): mixed {
+export function filterEmpty(a: any): any {
   return !isEmpty(a) ? a : undefined;
 }
