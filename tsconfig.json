@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "outDir": "lib/cjs/",
+    "removeComments": true,
+    "target": "ES5"
+  },
+  "exclude": [
+    "tests/**/*"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}

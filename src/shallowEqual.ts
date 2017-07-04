@@ -5,7 +5,6 @@
  * If both of them are {objects}, it checks if both of them
  * have the same keys with the same value.
  *
- * @flow
  * @param {*} a – The first passed data.
  * @param {*} b – The first passed data.
  * @return {boolean} – `true` if the both passed data are equal.
@@ -13,7 +12,7 @@
 
 import { numberIsNaN } from "./";
 
-export function shallowEqual(a: mixed, b: mixed): boolean {
+export function shallowEqual(a: any, b: any): boolean {
   const hasProp = Object.prototype.hasOwnProperty;
 
   // comparing objects and arrays

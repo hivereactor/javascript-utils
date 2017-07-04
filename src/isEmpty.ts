@@ -6,14 +6,13 @@
  * – `null` has been passed.
  * – `NaN` has been passed.
  *
- * @flow
  * @param {*} a – The passed value.
  * @return {boolean} – `true` if the conditions above are met.
  */
 
 import { numberIsNaN } from "./";
 
-export function isEmpty(a: mixed): boolean {
+export function isEmpty(a: any): boolean {
   if (typeof a === "object") {
     // typeof null => "object"
     if (a === null) return true;
