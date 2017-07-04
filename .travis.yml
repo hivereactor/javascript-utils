@@ -9,7 +9,7 @@ addons:
     packages:
     - gcc-4.8
     - g++-4.8
-after_script:
+after_success:
 - codecov
 before_install:
 - npm i -g codecov

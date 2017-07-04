@@ -11,15 +11,10 @@
     "test": "test"
   },
   "files": [
-    "lib/",
-    ".flowconfig"
+    "lib/"
   ],
-  "dependencies": {
-    "r": "0.0.5"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/chai": "^4.0.1",
-    "@types/mocha": "^2.2.41",
     "ava": "^0.20.0",
     "nyc": "^11.0.3",
     "typescript": "^2.4.1"
