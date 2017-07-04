@@ -1,4 +1,4 @@
-## isEmpty(a: mixed): boolean
+## isEmpty(a: any): boolean
 
 Checks if the passed value is empty. Returns `true` if either:
 

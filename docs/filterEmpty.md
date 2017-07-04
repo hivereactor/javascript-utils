@@ -1,4 +1,4 @@
-## filterEmpty(a: mixed): mixed | undefined
+## filterEmpty(a: any): any | undefined
 
 Checks and filters the value if it's empty. Returns `undefined` if either:
 
@@ -9,8 +9,8 @@ Checks and filters the value if it's empty. Returns `undefined` if either:
 
 #### Arguments
 
-* `a` *(mixed)* – The passed value.
+* `a` *(any)* – The passed value.
 
 #### Returns
 
-* *(mixed | undefined)* – `undefined` if the conditions above are met.
+* *(any | undefined)* – `undefined` if the conditions above are met.
