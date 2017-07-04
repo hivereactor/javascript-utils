@@ -10,7 +10,8 @@
  * @return {*|undefined} – `undefined` if the conditions above are met.
  */
 
-import { isEmpty, numberIsNaN } from "./";
+import { isEmpty } from "./isEmpty";
+import { numberIsNaN } from "./numberIsNaN";
 
 export function filterEmpty(a: any): any {
   return !isEmpty(a) ? a : undefined;

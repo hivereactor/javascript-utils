@@ -10,7 +10,7 @@
  * @return {boolean} – `true` if the both passed data are equal.
  */
 
-import { numberIsNaN } from "./";
+import { numberIsNaN } from "./numberIsNaN";
 
 export function shallowEqual(a: any, b: any): boolean {
   const hasProp = Object.prototype.hasOwnProperty;
