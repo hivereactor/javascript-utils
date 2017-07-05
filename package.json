@@ -26,7 +26,7 @@
     "prebuild": "rm -rf lib/",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build:cjs -- --inlineSourceMap",
-    "test": "nyc ava --no-color --verbose"
+    "test": "nyc ava"
   },
   "repository": {
     "type": "git",
