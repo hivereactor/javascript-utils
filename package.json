@@ -1,6 +1,6 @@
 {
   "name": "@hivereactor/utils",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Utility functions for your JavaScript project.",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
@@ -25,7 +25,7 @@
     "build:es": "tsc --module ES6 --outDir lib/es/",
     "prebuild": "rm -rf lib/",
     "prepublishOnly": "npm run build",
-    "pretest": "npm run build:cjs",
+    "pretest": "npm run build:cjs -- --inlineSourceMap",
     "test": "nyc ava"
   },
   "repository": {
@@ -38,33 +38,6 @@
     "url": "https://github.com/hivereactor/javascript-utils/issues"
   },
   "homepage": "https://github.com/hivereactor/javascript-utils#readme",
-  "babel": {
-    "env": {
-      "test": {
-        "plugins": [
-          "transform-es2015-modules-commonjs"
-        ]
-      }
-    },
-    "plugins": [
-      "transform-flow-strip-types"
-    ],
-    "presets": [
-      [
-        "env",
-        {
-          "modules": false,
-          "targets": {
-            "browsers": [
-              "ie >= 9",
-              "last 2 versions"
-            ],
-            "node": 4
-          }
-        }
-      ]
-    ]
-  },
   "nyc": {
     "exclude": [
       "test/**/*"
