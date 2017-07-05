@@ -12,7 +12,6 @@ addons:
 after_success:
 - codecov
 before_install:
-- rm package-lock.json
 - npm i -g codecov
 branches:
   only:
