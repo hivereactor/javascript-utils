@@ -1,3 +1,6 @@
+dependencies:
+  pre:
+  - npm i -g codecov
 general:
   branches:
     only:
@@ -5,3 +8,6 @@ general:
 machine:
   node:
     version: 8
+test:
+  post:
+  - codecov
