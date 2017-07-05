@@ -5,20 +5,6 @@
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
   "types": "lib/types/index.d.ts",
-  "directories": {
-    "doc": "docs",
-    "lib": "lib",
-    "test": "test"
-  },
-  "files": [
-    "lib/"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "ava": "^0.20.0",
-    "nyc": "^11.0.3",
-    "typescript": "^2.4.1"
-  },
   "scripts": {
     "build": "npm run build:cjs && npm run build:es",
     "build:cjs": "tsc -d --declarationDir lib/types/",
@@ -28,16 +14,33 @@
     "pretest": "npm run build:cjs -- --inlineSourceMap",
     "test": "nyc ava"
   },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hivereactor/javascript-utils.git"
   },
-  "author": "Hivereactor (https://hivereactor.com) <hello@hivereactor.com>",
+  "author": {
+    "name": "Hivereactor",
+    "email": "hello@hivereactor.com",
+    "url": "https://hivereactor.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hivereactor/javascript-utils/issues"
   },
   "homepage": "https://github.com/hivereactor/javascript-utils#readme",
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "nyc": "^11.0.3",
+    "typescript": "^2.4.1"
+  },
   "nyc": {
     "exclude": [
       "test/**/*"
