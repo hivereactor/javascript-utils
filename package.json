@@ -11,8 +11,7 @@
     "build:es": "tsc --module ES6 --outDir lib/es/",
     "prebuild": "rm -rf lib/",
     "prepublishOnly": "npm run build",
-    "pretest": "npm run build:cjs -- --inlineSourceMap",
-    "test": "nyc ava"
+    "test": "nyc mocha --compilers ts-node/register --recursive --reporter progress test/**/*.test.ts"
   },
   "directories": {
     "doc": "docs",
@@ -37,14 +36,26 @@
   },
   "homepage": "https://github.com/hivereactor/javascript-utils#readme",
   "devDependencies": {
-    "ava": "^0.20.0",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.7",
+    "mocha": "^3.4.2",
     "nyc": "^11.0.3",
+    "source-map-support": "^0.4.15",
+    "ts-node": "^3.2.0",
     "typescript": "^2.4.1"
   },
   "nyc": {
     "exclude": [
-      "test/**/*"
+      "test/**/*",
+      "**/*.d.ts"
     ],
-    "reporter": "lcov"
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "reporter": "lcov",
+    "require": [
+      "ts-node/register"
+    ]
   }
 }
