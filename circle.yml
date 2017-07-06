@@ -1,10 +1,6 @@
 dependencies:
   pre:
   - npm i -g codecov
-general:
-  branches:
-    only:
-    - master
 machine:
   node:
     version: 8
