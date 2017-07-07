@@ -38,7 +38,6 @@
   "devDependencies": {
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.7",
-    "escape-string-regexp": "^1.0.5",
     "mocha": "^3.4.2",
     "nyc": "^11.0.3",
     "source-map-support": "^0.4.15",
