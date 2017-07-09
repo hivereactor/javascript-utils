@@ -15,6 +15,7 @@ describe("filterEmpty()", () => {
 
   describe("null", () => {
     it("null => undefined", () => equal(filterEmpty(null), undefined));
+    it("undefined => undefined", () => equal(filterEmpty(undefined), undefined));
   });
 
   describe("numbers", () => {

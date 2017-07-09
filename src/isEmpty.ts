@@ -3,8 +3,7 @@
  * Returns `true` if either:
  * – An [array] or an {object} is empty.
  * – An empty string (`""`) has been passed.
- * – `null` has been passed.
- * – `NaN` has been passed.
+ * - `null`, `NaN` or `undefined` has been passed.
  *
  * @param {*} a – The passed value.
  * @return {boolean} – `true` if the conditions above are met.
@@ -25,5 +24,5 @@ export function isEmpty(a: any): boolean {
     return key === undefined;
   }
 
-  return numberIsNaN(a) || a === "";
+  return a === undefined || a === "" || numberIsNaN(a);
 }

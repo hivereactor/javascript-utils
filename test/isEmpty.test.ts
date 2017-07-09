@@ -15,6 +15,7 @@ describe("isEmpty()", () => {
 
   describe("null", () => {
     it("null => true", () => equal(isEmpty(null), true));
+    it("undefined => true", () => equal(isEmpty(undefined), true));
   });
 
   describe("numbers", () => {
