@@ -2,24 +2,24 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:latest
+      - image: circleci/node:latest
     steps:
       - checkout
       - run:
-          name: install-globals
+          name: Install npm globals
           command: npm i -g ava codecov
       - restore_cache:
           key: cache--{{ checksum "package.json" }}
       - run:
-          name: install-npm
+          name: Install npm
           command: npm i
       - save_cache:
           key: cache--{{ checksum "package.json" }}
           paths:
             - ./node_modules
       - run:
-          name: test
+          name: Test
           command: npm test
       - run:
-          name: upload-report
+          name: Upload test reports
           command: codecov
