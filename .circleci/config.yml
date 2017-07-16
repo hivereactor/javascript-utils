@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:latest
+    steps:
+      - checkout
+      - run:
+          name: install-globals
+          command: npm i -g ava codecov
+      - restore_cache:
+          key: cache--{{ checksum "package.json" }}
+      - run:
+          name: install-npm
+          command: npm i
+      - save_cache:
+          key: cache--{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: test
+          command: npm test
+      - run:
+          name: upload-report
+          command: codecov
