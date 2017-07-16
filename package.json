@@ -42,17 +42,6 @@
     "typescript": "^2.4.1"
   },
   "nyc": {
-    "exclude": [
-      "test/**/*",
-      "**/*.d.ts"
-    ],
-    "extension": [
-      ".ts",
-      ".tsx"
-    ],
-    "reporter": "lcov",
-    "require": [
-      "ts-node/register"
-    ]
+    "reporter": "lcov"
   }
 }
