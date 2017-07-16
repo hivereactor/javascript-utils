@@ -6,10 +6,11 @@
   "module": "lib/es/index.js",
   "types": "lib/types/index.d.ts",
   "scripts": {
-    "build": "npm run build:cjs && npm run build:es",
+    "build": "npm run build:cjs -- --removeComments && npm run build:es",
     "build:cjs": "tsc -d --declarationDir lib/types/",
-    "build:es": "tsc --module ES6 --outDir lib/es/",
+    "build:es": "tsc --module ES6 --outDir lib/es/ --removeComments",
     "prebuild": "rm -rf lib/",
+    "pretest": "npm run build:cjs",
     "prepublishOnly": "npm run build",
     "test": "nyc ava"
   },
