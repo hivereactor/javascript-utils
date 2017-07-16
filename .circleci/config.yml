@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Install npm globals
-          command: npm i -g ava codecov
+          command: sudo npm i -g ava codecov
       - restore_cache:
           key: cache--{{ checksum "package.json" }}
       - run:
