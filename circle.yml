@@ -1,9 +1,0 @@
-dependencies:
-  pre:
-  - npm i -g codecov
-machine:
-  node:
-    version: 8
-test:
-  post:
-  - codecov
