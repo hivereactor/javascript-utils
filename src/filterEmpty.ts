@@ -1,3 +1,6 @@
+import { isEmpty } from "./isEmpty";
+import { numberIsNaN } from "./numberIsNaN";
+
 /**
  * Checks and filters the value if it's empty.
  * Returns `undefined` if either:
@@ -8,9 +11,6 @@
  * @param {*} a – The passed value.
  * @return {*|undefined} – `undefined` if the conditions above are met.
  */
-
-import { isEmpty } from "./isEmpty";
-import { numberIsNaN } from "./numberIsNaN";
 
 export function filterEmpty(a: any): any {
   return !isEmpty(a) ? a : undefined;
