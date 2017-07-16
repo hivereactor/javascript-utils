@@ -11,6 +11,9 @@ jobs:
       - restore_cache:
           key: cache--{{ checksum "package.json" }}
       - run:
+          name: Install support packages
+          command: npm i --no-save supports-color
+      - run:
           name: Install npm
           command: npm i
       - save_cache:
