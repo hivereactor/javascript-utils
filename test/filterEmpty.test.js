@@ -8,7 +8,7 @@ test("[1, 2] => [1, 2]", (t) => t.deepEqual(filterEmpty([1, 2]), [1, 2]))
 
 // booleans
 test("true => true", (t) => t.is(filterEmpty(true), true));
-test("false => false", (t) => t.is(filterEmpty(false), false));
+test("false => undefined", (t) => t.is(filterEmpty(false), undefined));
 
 // null
 test("null => undefined", (t) => t.is(filterEmpty(null), undefined));

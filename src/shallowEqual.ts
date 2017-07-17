@@ -1,16 +1,16 @@
-import { numberIsNaN } from "./numberIsNaN";
-
 /**
- * Compares the passed data. If both of them are [arrays],
- * it checks if the values are in the same position.
+ * Compares the passed data.
+ * – If both of them are arrays, it checks if
+ * the values are in the same position.
+ * – If both of them are objects, it checks if
+ * both of them have the same keys with the same value.
  *
- * If both of them are {objects}, it checks if both of them
- * have the same keys with the same value.
- *
- * @param {*} a – The first passed data.
- * @param {*} b – The first passed data.
+ * @param {*} a – The first data.
+ * @param {*} b – The second data.
  * @return {boolean} – `true` if the both passed data are equal.
  */
+
+import { numberIsNaN } from "./numberIsNaN";
 
 export function shallowEqual(a: any, b: any): boolean {
   const hasProp = Object.prototype.hasOwnProperty;
