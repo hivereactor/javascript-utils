@@ -1,15 +1,16 @@
 ## filterEmpty(a: any): any | undefined
 
-Checks and filters the value if it's empty. Returns `undefined` if either:
+Checks and returns `undefined` if the value is [empty](#emptiness).
 
-* An [array] or an {object} is empty.
-* An empty string (`""`) has been passed.
-* `null`, `NaN` or `undefined` has been passed.
+#### Emptiness
 
-#### Arguments
+The passed value is considered empty if the value is one or more of the following:
 
-* `a` *(any)* – The passed value.
-
-#### Returns
-
-* *(any | undefined)* – `undefined` if the conditions above are met.
+* An empty array (`[]`)
+* An empty object (`{}`)
+* A [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy) value **except `0`** – *(that means either:)*
+  * `false`
+  * `null`
+  * `undefined`
+  * `NaN`
+  * `""`

@@ -1,11 +1,10 @@
 ## isEmpty(a: any): boolean
 
-Checks and returns `true` if the passed value is empty.
+Checks and returns `true` if the passed value is [empty](#emptiness).
 
 #### Emptiness
 
-The passed value is considered empty if the value
-is one or more of the following:
+The passed value is considered empty if the value is one or more of the following:
 
 * An empty array (`[]`)
 * An empty object (`{}`)
@@ -15,11 +14,3 @@ is one or more of the following:
   * `undefined`
   * `NaN`
   * `""`
-
-#### Arguments
-
-* `a` *(any)* – The passed value.
-
-#### Returns
-
-* *(boolean)* – `true` if the conditions above are met.
