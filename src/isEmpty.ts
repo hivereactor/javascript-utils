@@ -16,13 +16,9 @@ export function isEmpty(a: any): boolean {
     // typeof null => "object"
     if (a === null) return true;
 
-    // Get the first key, reassign it and break the loop
-    // If there are no keys, it doesn't do anything
-    let key = undefined;
-    for (key in a) break;
-
-    return key === undefined;
+    for (let b in a) return false;
+    return true;
   }
 
-  return a === undefined || a === "" || numberIsNaN(a);
+  return !a && a !== 0;
 }

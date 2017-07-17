@@ -8,7 +8,7 @@ test("[1, 2] => false", (t) => t.is(isEmpty([1, 2]), false));
 
 // booleans
 test("true => false", (t) => t.is(isEmpty(true), false));
-test("false => false", (t) => t.is(isEmpty(false), false));
+test("false => true", (t) => t.is(isEmpty(false), true));
 
 // null
 test("null => true", (t) => t.is(isEmpty(null), true));
