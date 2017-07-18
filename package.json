@@ -38,7 +38,7 @@
   "homepage": "https://github.com/hivereactor/javascript-utils#readme",
   "devDependencies": {
     "ava": "^0.21.0",
-    "nyc": "^11.0.3",
+    "nyc": "^11.1.0",
     "typescript": "^2.4.1"
   },
   "nyc": {
