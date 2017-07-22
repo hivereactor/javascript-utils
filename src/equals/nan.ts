@@ -6,6 +6,6 @@
  * @return {boolean} – `true` if `a` is `NaN`.
  */
 
-export function numberIsNaN(a: number): boolean {
-  return typeof a === "number" && isNaN(a);
+export function nan(a: number): boolean {
+    return typeof a === "number" && isNaN(a);
 }
