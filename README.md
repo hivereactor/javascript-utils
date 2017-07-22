@@ -1,5 +1,9 @@
 # @hivereactor/utils
 
+[MIT](LICENSE.md)
+
+---
+
 Utility functions for your JavaScript project.
 
 ### Installation
@@ -10,8 +14,8 @@ npm install @hivereactor/utils
 
 ### API
 
-* [`filterEmpty(a: any): any | undefined`](docs/filterEmpty.md)
-* [`isEmpty(a: any): boolean`](docs/isEmpty.md)
-* [`isObjectLiteral(a: object): boolean`](docs/isObjectLiteral.md)
-* [`numberIsNaN(a: number): boolean`](docs/numberIsNaN.md)
-* [`shallowEqual(a: any, b: any): boolean`](docs/shallowEqual.md)
+* [`compare.shallow(a: any, b: any): boolean`](docs/shallowEqual.md)
+* [`equals.nan(a: number): boolean`](docs/numberIsNaN.md)
+* [`filter.empty(a: any): any | undefined`](docs/filterEmpty.md)
+* [`is.empty(a: any): boolean`](docs/isEmpty.md)
+* [`is.objectLiteral(a: object): boolean`](docs/isObjectLiteral.md)

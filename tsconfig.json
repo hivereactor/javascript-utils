@@ -3,6 +3,8 @@
     "inlineSourceMap": true,
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "outDir": "lib/cjs/",
     "target": "ES5"
   },
