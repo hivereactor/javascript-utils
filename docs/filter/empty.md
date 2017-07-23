@@ -1,6 +1,6 @@
-## isEmpty(a: any): boolean
+## filter.empty(a: any): any?
 
-Checks and returns `true` if the passed value is [empty](#emptiness).
+Checks and returns `undefined` if the value is [empty](#emptiness).
 
 #### Emptiness
 

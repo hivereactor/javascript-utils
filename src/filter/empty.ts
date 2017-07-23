@@ -5,9 +5,8 @@
  * @return {*|undefined} – `undefined` if the passed value is empty.
  */
 
-import { isEmpty } from "./isEmpty";
-import { numberIsNaN } from "./numberIsNaN";
+import { is } from "../";
 
-export function filterEmpty(a: any): any {
-  return !isEmpty(a) ? a : undefined;
+export function empty(a: any): any {
+    return !is.empty(a) ? a : undefined;
 }

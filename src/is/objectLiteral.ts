@@ -5,9 +5,9 @@
  * @return {boolean} – `true` if the passed value is an object literal.
  */
 
-export function isObjectLiteral(a: object): boolean {
-  // handle null
-  if (a === null) return false;
+export function objectLiteral(a: object): boolean {
+    // handle null
+    if (a === null) return false;
 
-  return typeof a === "object" && a.constructor === Object;
+    return typeof a === "object" && a.constructor === Object;
 }
