@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "inlineSourceMap": true,
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noUnusedLocals": true,

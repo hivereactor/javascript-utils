@@ -1,6 +1,6 @@
 {
   "name": "@hivereactor/utils",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Namespaced utility functions for your JavaScript functions.",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
@@ -10,7 +10,7 @@
     "build:cjs": "tsc -d --declarationDir lib/types/",
     "build:es": "tsc --module ES6 --outDir lib/es/ --removeComments",
     "prebuild": "rm -rf lib/",
-    "pretest": "npm run build:cjs",
+    "pretest": "npm run build:cjs -- --inlineSourceMap",
     "prepublishOnly": "npm run build",
     "test": "nyc ava"
   },

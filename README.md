@@ -1,7 +1,6 @@
 # @hivereactor/utils
 
-[![License](https://img.shields.io/github/license/hivereactor/javascript-utils.svg)](LICENSE.md)
-[![Build Status](https://img.shields.io/circleci/project/github/hivereactor/javascript-utils.svg)](https://circleci.com/gh/hivereactor/javascript-utils)
+[![npm](https://img.shields.io/npm/v/@hivereactor/utils.svg)](npm)
 [![Code Coverage](https://img.shields.io/codecov/c/github/hivereactor/javascript-utils.svg)](https://codecov.io/gh/hivereactor/javascript-utils)
 
 Namespaced utility functions for your JavaScript functions.
