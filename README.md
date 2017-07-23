@@ -14,8 +14,8 @@ npm install @hivereactor/utils
 
 ### API
 
-* [`compare.shallow(a: any, b: any): boolean`](docs/shallowEqual.md)
-* [`equals.nan(a: number): boolean`](docs/numberIsNaN.md)
+* [`compare.shallow(a: any, b: any): boolean`](docs/compare/shallow.md)
+* [`equals.nan(a: number): boolean`](docs/equals/nan.md)
 * [`filter.empty(a: any): any?`](docs/filter/empty.md)
 * [`is.empty(a: any): boolean`](docs/is/empty.md)
 * [`is.objectLiteral(a: object): boolean`](docs/is/objectLiteral.md)
