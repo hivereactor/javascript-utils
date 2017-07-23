@@ -1,3 +1,3 @@
-## isObjectLiteral(a: object): boolean
+## is.objectLiteral(a: object): boolean
 
 Checks if the passed value is an object literal (`{}`).
