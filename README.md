@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@hivereactor/utils.svg)](npm)
 [![Code Coverage](https://img.shields.io/codecov/c/github/hivereactor/javascript-utils.svg)](https://codecov.io/gh/hivereactor/javascript-utils)
 
-Namespaced utility functions for your JavaScript functions.
+Namespaced utility functions for JavaScript.
 
 ### Installation
 

@@ -1,7 +1,7 @@
 {
   "name": "@hivereactor/utils",
-  "version": "3.0.1",
-  "description": "Namespaced utility functions for your JavaScript functions.",
+  "version": "3.0.2",
+  "description": "Namespaced utility functions for JavaScript.",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
   "types": "lib/types/index.d.ts",
