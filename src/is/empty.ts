@@ -10,7 +10,7 @@ export function empty(a: any): boolean {
         // typeof null => "object"
         if (a === null) return true;
 
-        for (let b in a) return false;
+        for (let _b in a) return false;
         return true;
     }
 
