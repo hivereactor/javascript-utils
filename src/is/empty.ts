@@ -6,10 +6,7 @@
  */
 
 export function empty(a: any): boolean {
-    if (typeof a === "object") {
-        // typeof null => "object"
-        if (a === null) return true;
-
+    if (typeof a === "object" && a !== null) {
         for (let _b in a) return false;
         return true;
     }
