@@ -1,8 +1,8 @@
 /**
  * Checks and returns `true` if the passed value is empty.
  *
- * @param {*} a – The passed value.
- * @return {boolean} – `true` if the passed value is empty.
+ * @param {*} a
+ * @return {boolean}
  */
 
 export function empty(a: any): boolean {

@@ -1,8 +1,8 @@
 /**
  * Checks and returns `undefined` if the value is empty.
  *
- * @param {*} a – The passed value.
- * @return {*|undefined} – `undefined` if the passed value is empty.
+ * @param {*} a
+ * @return {*|undefined}
  */
 
 import { is } from "../";

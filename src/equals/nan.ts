@@ -2,8 +2,8 @@
  * Checks if the passed number is `NaN` value.
  * Polyfills `Number.isNaN()`.
  *
- * @param {number} a – The passed number.
- * @return {boolean} – `true` if `a` is `NaN`.
+ * @param {number} a
+ * @return {boolean}
  */
 
 export function nan(a: number): boolean {
