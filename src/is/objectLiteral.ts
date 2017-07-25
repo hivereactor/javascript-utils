@@ -1,13 +1,14 @@
 /**
  * Checks if the passed value is an object literal (`{}`).
  *
- * @param {object} a – The passed value.
- * @return {boolean} – `true` if the passed value is an object literal.
+ * @param {object} a
+ * @return {boolean}
  */
 
 export function objectLiteral(a: object): boolean {
-    // handle null
-    if (a === null) return false;
-
-    return typeof a === "object" && a.constructor === Object;
+    return (
+        a !== null &&
+        typeof a === "object" &&
+        a.constructor === Object
+    );
 }
