@@ -1,6 +1,6 @@
 # @hivereactor/utils
 
-[![npm](https://img.shields.io/npm/v/@hivereactor/utils.svg)](npm)
+[![npm](https://img.shields.io/npm/v/@hivereactor/utils.svg)](https://npmjs.com/package/@hivereactor/utils)
 [![Code Coverage](https://img.shields.io/codecov/c/github/hivereactor/javascript-utils.svg)](https://codecov.io/gh/hivereactor/javascript-utils)
 
 Namespaced utility functions for JavaScript.
