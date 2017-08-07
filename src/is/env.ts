@@ -1,6 +1,6 @@
 /**
- * Checks if the process environment equals
- * to the passed string.
+ * Checks if the NODE_ENV environment variable equals
+ * the passed string.
  * 
  * @param {string} env
  * @return {boolean}

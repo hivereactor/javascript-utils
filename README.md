@@ -17,4 +17,5 @@ npm install @hivereactor/utils
 * [`equals.nan(a: number): boolean`](docs/equals/nan.md)
 * [`filter.empty(a: any): any?`](docs/filter/empty.md)
 * [`is.empty(a: any): boolean`](docs/is/empty.md)
+* [`is.env(env: string): boolean`](docs/is/env.md)
 * [`is.objectLiteral(a: object): boolean`](docs/is/objectLiteral.md)
