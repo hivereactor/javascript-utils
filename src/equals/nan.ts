@@ -1,6 +1,5 @@
 /**
- * Checks if the passed number is `NaN` value.
- * Polyfills `Number.isNaN()`.
+ * Checks if the passed value equals NaN.
  *
  * @param {number} a
  * @return {boolean}

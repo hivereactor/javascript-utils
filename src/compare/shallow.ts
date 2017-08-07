@@ -1,9 +1,6 @@
 /**
- * Compares the passed data.
- * – If both of them are arrays, it checks if
- * the values are in the same position.
- * – If both of them are objects, it checks if
- * both of them have the same keys with the same value.
+ * Does a shallow comparison between the passed data.
+ * For more, see docs/compare/shallow.md.
  *
  * @param {*} a
  * @param {*} b

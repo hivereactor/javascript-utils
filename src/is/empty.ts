@@ -1,5 +1,5 @@
 /**
- * Checks and returns `true` if the passed value is empty.
+ * Checks if the passed value is considered empty.
  *
  * @param {*} a
  * @return {boolean}

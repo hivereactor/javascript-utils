@@ -1,5 +1,5 @@
 /**
- * Checks and returns `undefined` if the value is empty.
+ * Returns undefined if the passed data is considered empty.
  *
  * @param {*} a
  * @return {*|undefined}
