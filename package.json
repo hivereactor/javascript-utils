@@ -1,6 +1,6 @@
 {
   "name": "@hivereactor/utils",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "description": "Namespaced utility functions for JavaScript.",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
@@ -12,7 +12,7 @@
     "prebuild": "rm -rf lib/",
     "pretest": "npm run build:cjs -- --inlineSourceMap",
     "prepublishOnly": "npm run build",
-    "test": "nyc ava"
+    "test": "NODE_ENV=test nyc ava"
   },
   "directories": {
     "doc": "docs",
@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/hivereactor/javascript-utils#readme",
   "devDependencies": {
+    "@types/node": "^8.0.19",
     "ava": "^0.21.0",
     "nyc": "^11.1.0",
     "typescript": "^2.4.2"
